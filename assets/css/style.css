@@ -1,0 +1,34 @@
+.skill-btn {
+  margin: 8px;
+}
+
+.img-overlay {
+  display: block;
+  position: relative;
+}
+
+.img-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 255, 0, 0.315);
+}
+
+.clear-float {
+  clear: both;
+}
+.my-carousel {
+  height: 380px;
+}
+.my-carousel-item {
+  min-height: 350px;
+  min-width: 220px;
+  background-color: grey;
+}
+
+.card-caption{
+    margin: 8px 0;
+}
