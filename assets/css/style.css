@@ -59,6 +59,10 @@ nav {
   list-style-type: initial;
 }
 
+/* .my-skills-tab ul .skill-icons {
+  list-style-type: inherit;
+} */
+
 .my-skills-tab a {
   color: #455a64;
 }
@@ -77,8 +81,32 @@ nav {
   will-change: left, right;
 }
 
-#tech-skills ul, 
+#tech-skills ul,
 #work-ex ul,
-#credentials ul {
-  padding: 0 20px;
+#credentials ul,
+#extracurricular ul {
+  padding: 20px;
+  background-color: #e6e6e6;
 }
+
+#tech-skills .skill-icons {
+  height: fit-content;
+  width: 100%;
+  padding: 30px 0;
+  margin: 16px 0;
+  background-color: #e6e6e6;
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+#tech-skills .skill-icons .fab{
+  /* background-color: red; */
+  color: #3c4d83 ;
+  margin: 0;
+  margin: 0;
+}
+

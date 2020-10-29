@@ -44,7 +44,11 @@
             >
             <ul class="right hide-on-med-and-down">
               <li><a class="blue-grey-text" href="/index.html">Home</a></li>
-              <li><a class="blue-grey-text" href="#">My Projects</a></li>
+              <li>
+                <a class="blue-grey-text" href="/views/my_projects.html"
+                  >My Projects</a
+                >
+              </li>
               <li>
                 <a class="blue-grey-text" href="collapsible.html">Javascript</a>
               </li>
@@ -142,36 +146,60 @@
       <div class="my-skills-tab">
         <div class="row container">
           <div class="col s12">
+            <!-- Tabs mark-up  -->
             <ul class="tabs">
-              <li class="tab col s4">
+              <li class="tab col s12 m3">
                 <a class="blue-grey-text darken-2" href="#tech-skills"
                   >Tech Skills</a
                 >
               </li>
-              <li class="tab col s4">
-                <a
-                  class="blue-grey-text darken-2"
-                  style="border-bottom: none"
-                  href="#work-ex"
-                  >Work-Ex</a
-                >
+              <li class="tab col s12 m3">
+                <a class="blue-grey-text darken-2" href="#work-ex">Work-Ex</a>
               </li>
-              <li class="tab col s4">
+              <li class="tab col s12 m3">
                 <a class="blue-grey-text darken-2" href="#credentials"
                   >Credentials</a
                 >
               </li>
+              <li class="tab col s12 m3">
+                <a class="blue-grey-text darken-2" href="#extracurricular "
+                  >Extracurricular</a
+                >
+              </li>
             </ul>
           </div>
+          <!-- Tech-skills mark-up  -->
           <div id="tech-skills" class="col s12">
-            <ul class="grey-text">
-              <li><a href="">HTML5</a></li>
-              <li><a href="">CSS3</a></li>
-              <li><a href="">JAVASCRIPT</a></li>
-              <li><a href="">FLUTTER</a></li>
-              <li><a href="">VUE JS</a></li>
-            </ul>
+            <div class="grey-text skill-icons">
+              <div class="i-box">
+                <img src="/assets/images/html.png" alt="" />
+
+                <h6>HTML5</h6>
+              </div>
+              <div class="i-box">
+                <img src="/assets/images/css.png" alt="" />
+                <h6>CSS3</h6>
+              </div>
+              <div class="i-box">
+                <img src="/assets/images/js.png" alt="" />
+                <h6>JavaScript</h6>
+              </div>
+              <div class="i-box">
+                <img src="/assets/images/vue.png" alt="" />
+                <h6>Vue Js</h6>
+              </div>
+              <div class="i-box">
+                <img src="/assets/images/flutter.png" alt="" />
+                <h6>Flutter</h6>
+              </div>
+            </div>
+            <a
+              class="btn-small blue-grey white-text"
+              href="/views/my_projects.html"
+              >My Projects</a
+            >
           </div>
+          <!-- Work-Ex mark-up -->
           <div id="work-ex" class="col s12">
             <ul>
               <li>
@@ -234,8 +262,13 @@
                 >
               </li>
             </ul>
-            <a href="#">Click here for my detailed resume.</a>
+            <a
+              class="btn-small blue-grey white-text"
+              href="/views/my_resume.html"
+              >My Resume</a
+            >
           </div>
+          <!-- Credentials mark-up -->
           <div id="credentials" class="col s12">
             <ul>
               <li>
@@ -285,6 +318,55 @@
                 >
               </li>
             </ul>
+            <a
+              class="btn-small blue-grey white-text"
+              href="/views/my_certifications.html"
+              >Certification</a
+            >
+          </div>
+          <div id="extracurricular" class="col s12">
+            <ul class="grey-text">
+              <li>
+                <a href=""
+                  >Strategy Consulting - Indian Institute of Management,
+                  Bangalore (IIMB)</a
+                >
+              </li>
+              <li><a href="">Design Thinking Certification - IDEO</a></li>
+              <li><a href="">Service Design - Udemy</a></li>
+              <li>
+                <a href=""
+                  >User Research Certification - Interaction Design Foundation
+                  (IDF)</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >User Experience Fundamentals - Interaction Design Foundation
+                  (IDF)</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >Cert SCI (Health Insurance) - Singapore College of Insurance
+                  (SCI)</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >Cert SCI (Reinsurance) - Singapore College of Insurance
+                  (SCI)</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >Licenciate (Non-Life) - Insurance Institute of India (III)</a
+                >
+              </li>
+            </ul>
+            <a class="btn-small blue-grey white-text" href="/index.html"
+              >Home</a
+            >
           </div>
         </div>
       </div>
