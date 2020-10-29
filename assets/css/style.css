@@ -21,6 +21,7 @@
   clear: both;
 }
 .my-carousel {
+  margin-top: 32px;
   height: 380px;
 }
 .my-carousel-item {
@@ -29,6 +30,6 @@
   background-color: grey;
 }
 
-.card-caption{
-    margin: 8px 0;
+.card-caption {
+  margin: 8px 0;
 }
