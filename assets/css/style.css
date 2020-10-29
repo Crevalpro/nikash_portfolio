@@ -21,15 +21,31 @@
   clear: both;
 }
 .my-carousel {
-  margin-top: 32px;
   height: 380px;
 }
 .my-carousel-item {
   min-height: 350px;
-  min-width: 220px;
+  min-width: fit-content;
   background-color: grey;
 }
 
 .card-caption {
   margin: 8px 0;
+}
+
+.heading-caption h5{
+  padding: 16px ;
+}
+
+nav{
+  border-bottom: none;
+}
+
+.txt-upper{
+  text-transform: uppercase;
+}
+
+.carousel-item img{
+  max-width: 250px;
+  max-height: 250px;
 }
