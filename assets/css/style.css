@@ -33,19 +33,52 @@
   margin: 8px 0;
 }
 
-.heading-caption h5{
-  padding: 16px ;
+.heading-caption h5 {
+  padding: 16px;
 }
 
-nav{
+nav {
   border-bottom: none;
 }
 
-.txt-upper{
+.txt-upper {
   text-transform: uppercase;
 }
 
-.carousel-item img{
+.carousel-item img {
   max-width: 250px;
   max-height: 250px;
+}
+
+.my-skills-tab {
+  margin: 50px auto;
+}
+
+.my-skills-tab ul li {
+  color: #455a64;
+  list-style-type: initial;
+}
+
+.my-skills-tab a {
+  color: #455a64;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color: #455a643f;
+  will-change: left, right;
+}
+
+#tech-skills ul, 
+#work-ex ul,
+#credentials ul {
+  padding: 0 20px;
 }
