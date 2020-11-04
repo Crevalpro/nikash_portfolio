@@ -23,6 +23,8 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/my_resume_style.css" />
+    <link rel="stylesheet" href="/assets/css/constant_style.css" />
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -30,210 +32,272 @@
   </head>
 
   <body class="white">
+    <!-- Common Component for Every Page STARTS -->
     <header>
-      <!-- Navigation STARTS -->
-      <div class="navigation">
-        <!-- Navbar Section STARTS -->
-        <nav class="grey lighten-5">
+      <!-- Nav Section STARTS -->
+      <div class="navbar-fixed">
+        <nav class="z-depth-0 white">
           <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo blue-grey-text">Nikash Deka</a>
+            <a href="/index.html" class="brand-logo light-blue-text"
+              ><strong>Nikash Deka</strong></a
+            >
             <a
               href="#"
-              data-target="mobile-demo"
-              class="sidenav-trigger blue-grey-text"
+              data-target="mobile-menu"
+              class="sidenav-trigger black-text"
               ><i class="material-icons">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
-              <li><a class="blue-grey-text" href="/index.html">Home</a></li>
+              <li><a class="black-text" href="/index.html">Home</a></li>
               <li>
-                <a class="blue-grey-text" href="/views/frontend_development.html"
-                  >Frontend Works</a
+                <a class="black-text" href="/views/my_projects.html"
+                  >My Projects</a
                 >
               </li>
               <li>
-                <a class="blue-grey-text" href="blogs.html">Blogs</a>
+                <a class="black-text" href="/views/blogs/blogs.html">Blogs</a>
               </li>
-              <li><a class="blue-grey-text" href="mobile.html">Mobile</a></li>
+              <li>
+                <a class="black-text" href="/views/about_me.html">About Me</a>
+              </li>
+              <li>
+                <a class="btn-small light-blue" href="/views/contact.html"
+                  >Let's Connect</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <!-- Navbar Section ENDS -->
       </div>
-      <!-- Navigation ENDS -->
 
-      <!-- Heading Caption STARTS -->
-      <div class="heading-caption">
-        <h5 class="blue-grey-text darken-4 center-align">Blogs & Articles</h5>
-      </div>
-      <div class="divider"></div>
-      <!-- Heading Caption ENDS -->
-
-      <!-- Top Showcase Cards STARTS -->
-      <div class="carousel my-carousel WHITE">
-        <a
-          class="carousel-item my-carousel-item blue-grey darken-3"
-          href="/views/blogs/flutter_blogs.html"
+      <ul class="sidenav" id="mobile-menu">
+        <a href="/index.html" class="brand-logo"
+          ><h5 class="pl-2 light-blue-text text-w5">Nikash Deka</h5></a
         >
-          <img src="/assets/images/web-dev-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">WEBSITE DESIGN</h5>
-            <h6 class="card-caption txt-upper">FRONTEND WEB DEVELOPMENT</h6>
-          </div>
-        </a>
-        <a
-          class="carousel-item my-carousel-item blue darken-3"
-          href="/views/design_thinking_blogs.html"
-          ><img src="/assets/images/design-thinking-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">DESIGN THINKING</h5>
-            <h6 class="card-caption">PRACTICAL APPLICATIONS</h6>
-          </div>
-        </a>
-        <a class="carousel-item my-carousel-item teal" href="#three!"
-          ><img src="/assets/images/insurance-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">INSURANCE</h5>
-            <h6 class="card-caption">CUSTOMER RETENTION</h6>
-          </div>
-        </a>
-        <a
-          class="carousel-item my-carousel-item grey darken-3"
-          href="/views/blogs/flutter_blogs.html"
-          ><img src="/assets/images/flutter-icon-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">FLUTTER UI</h5>
-            <h6 class="card-caption">TRENDING APPS</h6>
-          </div>
-        </a>
-        <a
-          class="carousel-item my-carousel-item deep-purple darken-4"
-          href="#five!"
-          ><img src="/assets/images/service-design-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">SERVICE DESIGN</h5>
-            <h6 class="card-caption">DECLUTTER PROCESSES</h6>
-          </div>
-        </a>
-        <a
-          class="carousel-item my-carousel-item deep-purple darken-4"
-          href="#five!"
-          ><img src="/assets/images/customer-experience-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">USER RESEARCH</h5>
-            <h6 class="card-caption">INSIGHT | EMPATHY</h6>
-          </div>
-        </a>
-        <a
-          class="carousel-item my-carousel-item deep-purple darken-4"
-          href="#five!"
-          ><img src="/assets/images/survey-1.png" />
-          <div class="carousel-fixed-item center-align white-text">
-            <h5 class="card-caption">ARTIFACTS AUDIT</h5>
-            <h6 class="card-caption">PROCESS RE-ALIGNMENT</h6>
-          </div>
-        </a>
-      </div>
-      <!-- Top Showcase Cards ENDS -->
+        <li><a class="text-w5" href="/index.html">Home</a></li>
+        <li>
+          <a class="text-w5" href="/views/my_projects.html">My Projects</a>
+        </li>
+        <li><a class="text-w5" href="/views/blogs/blogs.html">Blogs</a></li>
+        <li>
+          <a class="text-w5" href="/views/about_me.html">About Me</a>
+        </li>
+        <li>
+          <a class="btn-small light-blue" href="/views/contact.html"
+            >Let's Connect</a
+          >
+        </li>
+      </ul>
+      <!-- Nav Section ENDS -->
+    </header>
 
-      <!-- Top Showcase Container STARTS -->
-      <div class="white" style="height: 200px">
-        <div class="valign-wrapper center-align" style="height: 100%">
-          <div class="container">
-            <a
-              href="/views/frontend_development.html"
-              class="btn waves-effect waves-teal skill-btn blue-grey darken-1"
-            >
-              FRONTEND WORKS
-            </a>
-            <button
-              class="btn waves-effect waves-teal skill-btn blue-grey darken-2"
-            >
-              DESIGN-THINKING CONSULTING WORKS
-            </button>
-            <button
-              class="btn waves-effect waves-teal skill-btn blue-grey darken-3"
-            >
-              INSURANCE CONSULTANT WORKS
-            </button>
+        <!-- Top Slider Section STARTS -->
+        <div class="slider">
+          <ul class="slides">
+            <li class="blue img-overlay">
+              <img src="/assets/images/img-1.jpg " />
+              <div class="caption center-align">
+                <h3 class="blue-text accent-4 text-overlay">
+                  This is our big Tagline!
+                </h3>
+                <h5 class="light indigo-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li class="blue img-overlay">
+              <img src="/assets/images/img-2.jpg" />
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li class="blue img-overlay">
+              <img src="/assets/images/img-6.png" />
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li class="blue img-overlay">
+              <img src="/assets/images/img-10.jpg" />
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Top Slider Section ENDS -->
+
+    <!-- Page Heading STARTS -->
+    <div class="page-heading">
+      <h4 class="center-align mt-5">
+        Blogs & Articles <i class="material-icons medium light-green-text">hdr_strong</i>
+      </h2>
+    </div>
+    <!-- Page Heading ENDS -->
+    <!-- Common Component for Every Page ENDS -->
+
+    <!-- Top 3 Blogs/ Articles showcase section STARTS -->
+    <div class="latest-articles grey lighten-3 mt-2">
+      <div class="container">
+        <div class="row ">
+          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="/assets/images/design-workshop-1.png" alt="">
+                <span class="card-title">Article Title</span>
+              </div>
+              <div class="card-content ">
+                <p class="truncate-overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, doloremque officia totam maiores nulla nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam, quidem veniam eum neque facilis ducimus nihil quae provident atque, nesciunt cumque. Tempora dicta nemo, temporibus natus quisquam ad in? Quod ipsa, alias fugiat aliquam facilis sed odit perspiciatis asperiores eaque officiis quis ducimus perferendis consectetur maiores saepe, pariatur cumque. </p>
+                <div class="card-action">
+                  <a href="" class="light-blue-text">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="/assets/images/design-thinking-1.png" alt="">
+                <span class="card-title">Article Title</span>
+              </div>
+              <div class="card-content">
+                <p class="truncate-overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, doloremque officia totam maiores nulla nemo.</p>
+                <div class="card-action">
+                  <a href="" class="light-blue-text">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="/assets/images/img-12.jpeg" alt="">
+                <span class="card-title">Article Title</span>
+              </div>
+              <div class="card-content">
+                <p class="truncate-overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, doloremque officia totam maiores nulla nemo.</p>
+                <div class="card-action">
+                  <a href="" class="light-blue-text">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="/assets/images/img-7.jpeg" alt="">
+                <span class="card-title">Article Title</span>
+              </div>
+              <div class="card-content">
+                <p class="truncate-overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, doloremque officia totam maiores nulla nemo.</p>
+                <div class="card-action">
+                  <a href="" class="light-blue-text">Read</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!--  -->
       </div>
-      <!-- Top Showcase Container ENDS -->
+    </div>
+    
 
-      <!-- Slider Section STARTS -->
-      <div class="slider">
-        <ul class="slides">
-          <li class="blue img-overlay">
-            <img src="assets/images/img-1.jpg " />
-            <div class="caption center-align">
-              <h3 class="blue-text accent-4 text-overlay">
-                This is our big Tagline!
-              </h3>
-              <h5 class="light indigo-text text-lighten-3">
-                Here's our small slogan.
-              </h5>
-            </div>
-          </li>
-          <li class="blue img-overlay">
-            <img src="assets/images/img-2.jpg" />
-            <div class="caption left-align">
-              <h3>Left Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Here's our small slogan.
-              </h5>
-            </div>
-          </li>
-          <li class="blue img-overlay">
-            <img src="assets/images/img-6.png" />
-            <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Here's our small slogan.
-              </h5>
-            </div>
-          </li>
-          <li class="blue img-overlay">
-            <img src="assets/images/img-10.jpg" />
-            <div class="caption center-align">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Here's our small slogan.
-              </h5>
-            </div>
-          </li>
-        </ul>
+    <!-- Top 3 Blogs/ Articles showcase section ENDS -->
+
+    <!-- Top Showcase Container STARTS -->
+    <div class="white" style="height: 200px">
+      <div class="valign-wrapper center-align" style="height: 100%">
+        <div class="container">
+          <a
+            href="/views/frontend_development.html"
+            class="btn waves-effect waves-teal skill-btn blue-grey darken-1"
+          >
+            FRONTEND WORKS
+          </a>
+          <button
+            class="btn waves-effect waves-teal skill-btn blue-grey darken-2"
+          >
+            DESIGN-THINKING CONSULTING WORKS
+          </button>
+          <button
+            class="btn waves-effect waves-teal skill-btn blue-grey darken-3"
+          >
+            INSURANCE CONSULTANT WORKS
+          </button>
+        </div>
       </div>
-      <!-- Slider Section ENDS -->
-    </header>
+      <!--  -->
+    </div>
+    <!-- Top Showcase Container ENDS -->
+
 
     <main>
       <div class="activity" style="height: 200px"></div>
     </main>
 
-    <footer class="page-footer blue-grey darken-4">
+    <!-- Footer STARTS -->
+    <footer class="page-footer light-blue">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Footer Content</h5>
             <p class="grey-text text-lighten-4">
-              You can use rows and columns here to organize your footer content.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eos
+              sapiente ipsum veritatis maiores deleniti corporis, eum nisi
+              doloribus harum, eaque laborum sint, ratione est.
+            </p>
+            <p class="grey-text text-lighten-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eos
+              sapiente ipsum veritatis maiores.
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="/index.html">Home</a>
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="/views/my_projects.html"
+                  >My Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="/views/frontend_development.html"
+                  >My Frontend Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="/views/blogs/blogs.html"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="/views/about_me.html"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn-small mt-1 light-blue darken-3"
+                  href="/views/contact.html"
+                  >Let's Connect</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -245,10 +309,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- 
-     -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- Footer ENDS -->
 
     <script>
       $(document).ready(function () {
