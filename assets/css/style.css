@@ -131,6 +131,8 @@
 */
 
 
+
+/* Styling to set left & right padding for brand logo  */
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     min-width: 220px;
