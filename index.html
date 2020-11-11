@@ -36,8 +36,8 @@
     <header>
       <!-- Nav Section STARTS -->
       <div class="navbar-fixed">
-        <nav class="z-depth-0 white ">
-          <div class="nav-wrapper container ">
+        <nav class="z-depth-0 white">
+          <div class="nav-wrapper container">
             <a href="/index.html" class="brand-logo light-blue-text"
               ><strong>Nikash Deka</strong></a
             >
@@ -73,7 +73,7 @@
       <ul class="sidenav" id="mobile-menu">
         <a href="/index.html" class="brand-logo">
           <h5 class="light-blue-text"><strong>Nikash Deka</strong></h5>
-          </a>
+        </a>
         <li><a class="text-w5" href="/index.html">Home</a></li>
         <li>
           <a class="text-w5" href="/views/my_projects.html">My Projects</a>
@@ -506,7 +506,26 @@
       <div class="footer-copyright">
         <div class="container">
           © 2020 Nikas Deka. All Rights Reserced
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <a
+            class="dropdown-trigger grey-text text-lighten-4 right"
+            href="#"
+            data-target="dropdownlist"
+            style="width: 220px;"
+            >More Links</a
+          >
+          <ul id="dropdownlist" class="dropdown-content  light-blue" >
+            <li>
+              <a class="grey-text text-lighten-4" href="#!"
+                >Crevalpro SDMC LLP</a
+              >
+            </li>
+            <li>
+              <a class="grey-text text-lighten-4" href="#!">Design Resources</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-4" href="#!">My Photography</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
@@ -527,6 +546,9 @@
         $(".carousel.carousel-slider").carousel({
           fullWidth: true,
           indicators: true,
+        });
+        $(".dropdown-trigger").dropdown({
+          constrainWidth: true,
         });
       });
     </script>
