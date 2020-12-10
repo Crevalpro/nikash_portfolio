@@ -26,6 +26,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.list-styling li {
+  padding-bottom: 16px;
+}
 .certification-items ul li a {
   color: #607d8b;
   margin-left: 8px;
